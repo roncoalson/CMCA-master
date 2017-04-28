@@ -91,3 +91,18 @@ input[type="checkbox"] + label {
   display: block;
   margin-left: 1.5em;
 }
+
+/*ES Edits*/
+
+.footer-form {
+  padding: 0 1em;
+}
+
+.footer-form input, .copyright input{
+  margin-bottom: 1em;
+}
+
+.youtube-player-wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+}

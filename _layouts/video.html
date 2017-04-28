@@ -2,13 +2,33 @@
 layout: default
 ---
 
-
-<div id="youtube-player" data-id="{{ page.youtubeID }}">
-  <!--<h2>{{ page.title }}</h2>
-  <p>{{ page.description }}</p> -->
+<div class="youtube-player-wrapper">
+  <div id="youtube-player" data-id="{{ page.youtubeID }}">
+    <!--<h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p> -->
+  </div>
 </div>
+<!--
 <section class="wrapper style5">
   <div class="inner">
     {{ content }}
+  </div>
+</div>
+-->
+<section class="wrapper style5">
+  <div class="inner">
+  <div class="row">
+    <div class="6u 12u$(medium)">
+      {{ content }}
+    </div>
+    <div class="6u 12u$(medium)">
+      {% include large-form.html %}
+    </div>
+    <div class="12u 12u$(medium)">
+    {% capture my_include %}{% include video-footer.md %}{% endcapture %}
+       {{ my_include | markdownify }}
+
+    </div>
+  </div>
   </div>
 </div>

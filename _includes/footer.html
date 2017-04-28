@@ -11,20 +11,11 @@
     <li>&copy; CHICAGO CANNABIS ALLIANCE</li><br/>Theme: <a href="http://html5up.net">HTML5 UP <li></a> Design: <a href="http://austingreen.info">AUSTIN GREEN</a></li><li>Content: <a href="http://zis.es">Zises Communications, Inc.</a></li>
   </ul>-->
 
-  <section class="copyright">
+  <section class="copyright wrapper">
     <div class="inner">
       Contact Us
 
-      <form action="https://formspree.io/info@chicagocannabis.org" method="POST">
-          <input type="text" name="_name" placeholder="Name">
-          <input type="email" name="_replyto" placeholder="Email Address">
-          <input type="text" name="_comments" placeholder="Comments. Please.">
-          <input type="hidden" name="_subject" value="New submission!" />
-          <input type="hidden" name="_next" value="{{ site.github.url }}/about-us" />
-          <input type="text" name="_gotcha" style="display:none" />
-          <br/>
-          <input type="submit" value="Send">
-      </form>
+      {% include footer-form.html %}
     </div>
   </div>
 </footer>
