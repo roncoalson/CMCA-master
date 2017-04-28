@@ -1,0 +1,30 @@
+<footer id="footer">
+  <!--<ul class="icons">
+    <li><a href="{{ site.twitterUrl }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="{{ site.facebookUrl }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href="{{ site.instagramUrl }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>-->
+ <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"076ca8cf24474138730b33274","lid":"daee7c0755"}) })</script>
+-->
+<!--  <ul class="copyright">
+    <li>&copy; CHICAGO CANNABIS ALLIANCE</li><br/>Theme: <a href="http://html5up.net">HTML5 UP <li></a> Design: <a href="http://austingreen.info">AUSTIN GREEN</a></li><li>Content: <a href="http://zis.es">Zises Communications, Inc.</a></li>
+  </ul>-->
+
+  <section class="copyright">
+    <div class="inner">
+      Contact Us
+
+      <form action="https://formspree.io/info@chicagocannabis.org" method="POST">
+          <input type="text" name="_name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email Address">
+          <input type="text" name="_comments" placeholder="Comments. Please.">
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_next" value="{{ site.github.url }}/about-us" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <br/>
+          <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+</footer>

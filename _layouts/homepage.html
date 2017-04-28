@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="page-wrapper" style="background-image: url('{{ site.github.url }}/{{ page.banner }}'); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: cover; padding-top: 0;">
+      {% include header.html %}
+
+      <article id="main">
+        {{ content }}
+      </article>
+
+      {% include footer.html %}
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>

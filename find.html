@@ -1,0 +1,110 @@
+---
+layout: page
+title: Chicago Dispensary Locator
+description: Find a Chicago Cannabis Dispensary Near You
+permalink: /find/
+banner: images/pic13.jpg
+---
+
+<header>
+  <h2>Chicago Dispensaries</h2>
+  <p>Click a marker for more information</p>
+</header>
+
+<style>
+  #map {
+    height: 450px;
+    width: 100%;
+  }
+
+  #map h4, h3, p {
+    margin-bottom:0;
+  }
+
+  #map hr {
+    margin-top:0;
+    margin-bottom:5px;
+  }
+</style>
+<div id="map"></div>
+
+<br/>
+<div style="text-align:right;">
+  <div style="float:left; text-align:left;">
+    <h3>DISPENSARY 33</h3>
+    <p>Phone: <a href="tel:3126203333"></a>312-620-3333</p>
+    <p>Website: <a href="http://dispensary33.com/" target="_blank">http://dispensary33.com/</a></p>
+    <p>5001 N CLARK ST</p>
+    <p>CHICAGO, IL 60640</p>
+  </div>
+  <a href="http://dispensary33.com/" target="_blank"><img src='{{ site.github.url }}/images/Sales-Counter_web.jpg' width="500" style="text-align:right;"/></a>
+</div>
+
+<br/>
+<div style="text-align:right;">
+  <div style="float:left; text-align:left;">
+    <h3>MODERN CANNABIS (MOCA)</h3>
+    <p>Phone: <a href="tel:8728292089"></a>872-829-2089</p>
+    <p>Website: <a href="http://moderncann.com/" target="_blank">http://moderncann.com</a></p>
+    <p>2847 W FULLERTON AVE</p>
+    <p>CHICAGO, IL 60647</p>
+  </div>
+  <img src='{{ site.github.url }}/images/pic01.jpg' width="500" style="text-align:right;"/>
+</div>
+
+<br/>
+<div style="text-align:right;">
+  <div style="float:left; text-align:left;">
+    <h3>Midway Dispensary</h3>
+    <p>Phone: <a href="tel:8722677038 "></a>872.267-7038</p>
+    <p>Website: <a href="http://midwaydispensary.com/" target="_blank">http://midwaydispensary.com/</a></p>
+    <p>5648 S. ARCHER</p>
+    <p>CHICAGO, IL 60640</p>
+  </div>
+  <img src='{{ site.github.url }}/images/pic01.jpg' width="500" style="text-align:right;"/>
+</div>
+
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 41.895485, lng: -87.746272},
+      zoom: 10
+    });
+
+    var popupWindow = new google.maps.InfoWindow({
+      content: ''
+    });
+
+    dispensaries.forEach(function(dispensary) {
+      var personalizedContent =
+        '<div>'
+      + '<h3>' + dispensary.name + '</h3><hr/>'
+      + '<p>Phone: <a href="tel:' + dispensary.phone + '">' + dispensary.phone + '</a></p>'
+      + '<p style="margin-bottom:8px;">Website: <a href="' + dispensary.website + '">' + dispensary.website + '</a></p>'
+      + '<h4>' + dispensary.address + '</h4>'
+      + '<h4>' + dispensary.city + ', ' + dispensary.state + ' ' + dispensary.zip + '</h4>'
+      + '</div>';
+
+      var latLng = {lat: parseFloat(dispensary.geo.lat), lng: parseFloat(dispensary.geo.lon)};
+      var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: dispensary.name
+      });
+
+      marker.addListener('click', function() {
+        popupWindow.setContent(personalizedContent);
+        popupWindow.open(map, marker);
+      });
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ site.googleMapsApiKey }}&callback=initMap" async defer></script>
+<script>
+  var dispensaries = [{"id":53727,"phone":"312-620-3333","website":"http:\/\/dispensary33.com\/","image":false,"name":"Dispensary 33","owner":"t","email":"t","address":"5001 N Clark St","city":"Chicago","state":"IL","county":"","zip":"60640","geo":{"lat":"41.9726771","lon":"-87.6676646"}},{"id":53726,"phone":"872-829-2089","website":"http:\/\/moderncann.com\/","image":false,"name":"Modern Cannabis (MOCA)","owner":"t","email":"t","address":"2847 W Fullerton Ave","city":"Chicago","state":"IL","county":"","zip":"60647","geo":{"lat":"41.9246065","lon":"-87.6992543"}},{"id":5372,"phone":"","website":"http:\/\/midwaydispensary.com\/","image":false,"name":"Midway Dispensary","owner":"t","email":"t","address":"5648 S. Archer","city":"Chicago","state":"IL","county":"","zip":"60640","geo":{"lat":"41.79770","lon":"-87.75207"}}];
+
+
+
+  var xchidispensaries = [{"id":55535,"phone":"(618) 715-0882","website":"http:\/\/thriveil.com\/","image":false,"name":"Thrive Harrisburg","owner":"t","email":"t","address":"105 N. Veterans Drive","city":"Harrisburg","state":"IL","county":"","zip":"62946","geo":{"lat":"37.7491286","lon":"-88.5304001"}},{"id":55534,"phone":"(847) 780-3942","website":"http:\/\/elevele.net\/","image":false,"name":"elevele","owner":"t","email":"t","address":"1460A Old Skokie Road","city":"Highland Park","state":"IL","county":"","zip":"60035","geo":{"lat":"42.178981","lon":"-87.819731"}},{"id":55285,"phone":"630-377-7373","website":"http:\/\/healthwestil.com\/","image":false,"name":"Healthway Services of West Illinois","owner":"t","email":"t","address":"3714 Illinois Avenue, Unit C","city":"St. Charles","state":"IL","county":"","zip":"60174","geo":{"lat":"41.9181289","lon":"-88.2710034"}},{"id":55284,"phone":"618-381-9229","website":"http:\/\/hcillinois.com\/","image":false,"name":"HCI Alternatives","owner":"t","email":"t","address":"1014 Eastport Plaza Drive","city":"Collinsville","state":"IL","county":"","zip":"62234","geo":{"lat":"38.6791083","lon":"-90.0153041"}},{"id":55282,"phone":"630-359-3213","website":"http:\/\/www.midwestcompassion.org\/","image":false,"name":"Midwest Compassion Center","owner":"t","email":"t","address":"1335 Lakeside Drive, Unit 4","city":"Romeoville","state":"IL","county":"","zip":"60446","geo":{"lat":"41.670646","lon":"-88.073522"}},{"id":53911,"phone":"815-324-9189","website":"http:\/\/www.pharmacannis.com\/","image":false,"name":"Pharmacannis","owner":"t","email":"t","address":"4100 North Columbus St, Unit B","city":"Ottawa","state":"IL","county":"","zip":"61350","geo":{"lat":"41.3795178","lon":"-88.8351735"}},{"id":53910,"phone":"847-755-2992","website":"http:\/\/www.pharmacannis.com\/","image":false,"name":"Pharmacannis","owner":"t","email":"t","address":"1135 Tower Road","city":"Schaumburg","state":"IL","county":"","zip":"60173","geo":{"lat":"42.0552137","lon":"-88.0527444"}},{"id":53877,"phone":"224-801-2015","website":"http:\/\/www.newagecare.org\/","image":false,"name":"New Age Care","owner":"t","email":"t","address":"2015 E. Euclid","city":"Mount Prospect","state":"IL","county":"","zip":"60056","geo":{"lat":"42.08767","lon":"-87.8936486"}},{"id":53876,"phone":"708-258-1141","website":"http:\/\/greenhouseil.com\/","image":false,"name":"Greenhouse","owner":"t","email":"t","address":"9930 W 190th St. Unit H","city":"Mokena","state":"IL","county":"","zip":"60448","geo":{"lat":"41.544862","lon":"-87.858876"}},{"id":53874,"phone":"847-686-2821","website":"http:\/\/greenhouseil.com\/","image":false,"name":"Greenhouse","owner":"t","email":"t","address":"151 S Pfingsten Rd. Unit V","city":"Deerfield","state":"IL","county":"","zip":"60015","geo":{"lat":"42.1504788","lon":"-87.8455703"}},{"id":53743,"phone":"309-647-9333","website":"http:\/\/salveohealthandwellness.com\/","image":false,"name":"Salveo Health & Wellness","owner":"t","email":"t","address":"3104 N Main St","city":"Canton","state":"IL","county":"","zip":"61520","geo":{"lat":"40.5982655","lon":"-90.0331374"}},{"id":53742,"phone":"217-679-3283","website":"https:\/\/www.hcillinois.com\/","image":false,"name":"HCI Alternatives","owner":"T","email":"T","address":"628 E Adams","city":"Springfield","state":"IL","county":"","zip":"62701","geo":{"lat":"39.8002442","lon":"-89.6467724"}},{"id":53752,"phone":"815-773-9300","website":"http:\/\/www.3cdispensary.com\/","image":false,"name":"3C Compassionate Care Center","owner":"t","email":"t","address":"1627 Rock Creek Blvd","city":"Joilet","state":"IL","county":"","zip":"60431","geo":{"lat":"41.4911361","lon":"-88.1724364"}},{"id":53748,"phone":"630-369-4000","website":"http:\/\/www.3cdispensary.com\/","image":false,"name":"3C Compassionate Care Center","owner":"t","email":"t","address":"1700 Quincy Ave, Suite 103","city":"Naperville","state":"IL","county":"","zip":"60540","geo":{"lat":"41.7737989","lon":"-88.191063"}},{"id":53745,"phone":"800-789-2310","website":"http:\/\/www.medmardispensary.com","image":false,"name":"MedMar Rockford","owner":"t","email":"t","address":"2696 McFarland Rd","city":"Rockford","state":"IL","county":"","zip":"61107","geo":{"lat":"42.299635","lon":"-88.978961"}},{"id":53744,"phone":"815-516-0087","website":"http:\/\/www.mapleglen.birdinhandmedia.com","image":false,"name":"Mapleglen Care Center","owner":"t","email":"t","address":"4777 Stenstrom Rd","city":"Rockford","state":"IL","county":"","zip":"61109","geo":{"lat":"42.224354","lon":"-89.023472"}},{"id":53750,"phone":"630-607-0796","website":"http:\/\/earthmed.com\/","image":false,"name":"EarthMed","owner":"t","email":"t","address":"852 Westgate","city":"Addison","state":"IL","county":"","zip":"60101","geo":{"lat":"41.910777","lon":"-87.993678"}},{"id":53747,"phone":"217-214-6337","website":"http:\/\/www.herbalremediesil.com","image":false,"name":"Herbal Remedies","owner":"t","email":"t","address":"4440 Broadway Suite 1","city":"Quincy","state":"IL","county":"","zip":"62305","geo":{"lat":"39.9350584","lon":"-91.3445799"}},{"id":53727,"phone":"312-620-3333","website":"http:\/\/dispensary33.com\/","image":false,"name":"Dispensary 33","owner":"t","email":"t","address":"5001 N Clark St","city":"Chicago","state":"IL","county":"","zip":"60640","geo":{"lat":"41.9726771","lon":"-87.6676646"}},{"id":53736,"phone":"312-874-7040","website":"www.windycitycannabis.com","image":false,"name":"Windy City Cannabis","owner":"t","email":"t","address":"11425 S Harlem St","city":"Worth","state":"IL","county":"","zip":"60482","geo":{"lat":"41.6833754","lon":"-87.7968297"}},{"id":53735,"phone":"312-874-7040","website":"www.windycitycannabis.com","image":false,"name":"Windy City Cannabis","owner":"t","email":"t","address":"2535 Veterans Dr","city":"Posen","state":"IL","county":"","zip":"60469","geo":{"lat":"41.6255873","lon":"-87.6831923"}},{"id":53734,"phone":"312-874-7040","website":"http:\/\/www.windycitycannabis.com\/","image":false,"name":"Windy City Cannabis","owner":"t","email":"t","address":"8340 S Roberts Rd","city":"Justice","state":"IL","county":"","zip":"60458","geo":{"lat":"41.7390946","lon":"-87.8188135"}},{"id":53740,"phone":"847-754-4955","website":"http:\/\/naturescarecompany.com\/","image":false,"name":"Nature's Care Company","owner":"t","email":"t","address":"975 Rohlwing Road","city":"Rolling Meadows","state":"IL","county":"","zip":"60008","geo":{"lat":"42.09944","lon":"-88.02462"}},{"id":53739,"phone":"630-264-0890","website":"http:\/\/www.pharmacannis.com\/","image":false,"name":"Pharmacannis","owner":"t","email":"t","address":"161 S. Lincolnway St, Suite 301","city":"North Aurora","state":"IL","county":"","zip":"60542","geo":{"lat":"41.8000356","lon":"-88.3244543"}},{"id":53738,"phone":"847-424-0140","website":"http:\/\/www.pharmacannis.com\/","image":false,"name":"Pharmacannis","owner":"t","email":"t","address":"1804 Maple Ave","city":"Evanston","state":"IL","county":"","zip":"60201","geo":{"lat":"42.0501007","lon":"-87.6847959"}},{"id":53733,"phone":"312-874-7040","website":"http:\/\/www.windycitycannabis.com","image":false,"name":"Windy City Cannabis","owner":"t","email":"t","address":"1137 W 175th St","city":"Homewood","state":"IL","county":"","zip":"60430","geo":{"lat":"41.5717446","lon":"-87.6448702"}},{"id":53726,"phone":"872-829-2089","website":"http:\/\/moderncann.com\/","image":false,"name":"Modern Cannabis (MOCA)","owner":"t","email":"t","address":"2847 W Fullerton Ave","city":"Chicago","state":"IL","county":"","zip":"60647","geo":{"lat":"41.9246065","lon":"-87.6992543"}},{"id":53707,"phone":"(309) 863-2122","website":"http:\/\/trinitymmj.com\/","image":false,"name":"Trinity Compassionate Care Centers","owner":"test","email":"test","address":"3125 N University St, Suite B","city":"Peoria","state":"IL","county":"Peoria","zip":"","geo":{"lat":"40.7260895","lon":"-89.6137632"}},{"id":53717,"phone":"618-969-8217","website":"http:\/\/harbory.us.com\/","image":false,"name":"Harbory Medical Cannabis","owner":"test","email":"test","address":"8195 Express Dr","city":"Marion","state":"IL","county":"","zip":"62959","geo":{"lat":"37.7459747","lon":"-89.0084123"}},{"id":53714,"phone":"224-377-9734","website":"http:\/\/pdimedical.com","image":false,"name":"PDI Medical","owner":"test","email":"test","address":"1623 Barclay Blvd","city":"Buffalo Grove","state":"IL","county":"","zip":"60069","geo":{"lat":"42.1811194","lon":"-87.9352447"}},{"id":53716,"phone":"847-616-8966","website":"http:\/\/www.theclinicmundelein.com\/","image":false,"name":"The Clinic Mundelein","owner":"test","email":"test","address":"1325 Armour Blvd","city":"Mundelein","state":"IL","county":"","zip":"","geo":{"lat":"42.238042","lon":"-87.983884"}},{"id":53702,"phone":"309-283-7642","website":"","image":false,"name":"Nature's Treatment of Illionis","owner":"Matt Stern","email":"mjstern@sternbeverage.com","address":"973 Tech Drive","city":"Milan","state":"IL","county":"Rock Island","zip":"61264","geo":{"lat":"41.4427142","lon":"-90.5418294"}}];
+</script>
