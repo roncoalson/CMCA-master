@@ -96,10 +96,17 @@ input[type="checkbox"] + label {
 
 .footer-form {
   padding: 0 1em;
+  text-align: left;
 }
 
 .footer-form input, .copyright input{
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+}
+
+#large-form {
+  border: 1px solid #ef5e4a;
+  padding: 1em;
+  border-radius: 25px;
 }
 
 #footer.row {
@@ -110,7 +117,7 @@ input[type="checkbox"] + label {
   text-align: left;
 }
 .youtube-player-wrapper {
-  padding-top: 3em;
+  padding: 3em 0;
 }
 
 @media screen and (min-width: 480px) {

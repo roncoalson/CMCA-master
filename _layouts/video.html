@@ -20,15 +20,14 @@ layout: default
   <div class="row">
     <div class="6u 12u$(medium)">
       {{ content }}
+      
+      {% capture my_include %}{% include video-footer.md %}{% endcapture %}
+      {{ my_include | markdownify }}
     </div>
     <div class="6u 12u$(medium)">
       {% include large-form.html %}
     </div>
-    <div class="12u 12u$(medium)">
-    {% capture my_include %}{% include video-footer.md %}{% endcapture %}
-       {{ my_include | markdownify }}
 
-    </div>
   </div>
   </div>
 </div>
