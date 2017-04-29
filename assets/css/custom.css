@@ -106,7 +106,7 @@ input[type="checkbox"] + label {
 #large-form {
   border: 1px solid #ef5e4a;
   padding: 1em;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 #footer.row {
@@ -119,7 +119,9 @@ input[type="checkbox"] + label {
 .youtube-player-wrapper {
   padding: 3em 0;
 }
-
+.center {
+  text-align: center;
+}
 @media screen and (min-width: 480px) {
   .youtube-player-wrapper {
     max-width: 75%;
