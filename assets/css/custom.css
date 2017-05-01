@@ -93,7 +93,16 @@ input[type="checkbox"] + label {
 }
 
 /*ES Edits*/
+.spotlight {
+   opacity: 0.45;
+  transition: opacity 0.5s;
+}
 
+.spotlight:hover {
+  cursor:pointer;
+  opacity: 1.0;
+  transition: opacity 0.5s;
+}
 .footer-form {
   padding: 0 1em;
   text-align: left;
