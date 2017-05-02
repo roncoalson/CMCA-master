@@ -1,14 +1,12 @@
 ---
 layout: video
 title: HIV and Cannabis
-description: We Can Help You or Someone You Know
+description: Cannabis and HIV
 permalink: /hiv/
 youtubeID: kcHbjDlhIy4
 ---
 
-## Please fill out the information below and someone will contact you within 24 hours
-Cannabis and HIV
-Cannabis helps alleviate the symptoms of HIV and associated medications.
+### Cannabis helps alleviate the symptoms of HIV and associated medications.
 
 These symptoms include: 
 * Nausea and vomiting
