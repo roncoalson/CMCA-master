@@ -6,12 +6,13 @@ permalink: /pain/
 youtubeID: XkDI9wuaWAc
 ---
 
-## Please fill out the information below and someone will contact you within 24 hours
+## Please fill out the contact form and someone will contact you within 24 hours
 Cannabis and Pain
-Can cannabis help alleviate pain from conditions like spinal injuries and Fibromyalgia?
+Cannabis helps alleviate pain from conditions like spinal injuries and Fibromyalgia.
 
+Often, cannabis can be more effective than opioids and other pharmaceutical drugs in alleviating pain, particularly for chronic pain. Illinois doctors now recognize cannabis as an effective tool to treat fibromayalgia and other chronic pain problems.
 
-INFO TBD WILL BE RIGHT HERE
+Cannabis can help with:
 
 * Nausea and vomiting
 * Weakness
@@ -22,5 +23,3 @@ INFO TBD WILL BE RIGHT HERE
 * Swelling
 * Lack of sleep
 * High anxiety
-
-Often, cannabis can be more effective than opioids and other pharmaceutical drugs in alleviating the symptoms of cancer. Illinois doctors now recognize cannabis as an effective tool to treat symptoms of cancer therapy.

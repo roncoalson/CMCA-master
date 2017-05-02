@@ -6,7 +6,7 @@ permalink: /cancer/
 youtubeID: E57z3VwkroM
 ---
 
-## Please fill out the information below and someone will contact you within 24 hours
+## Please fill out the information and someone will contact you within 24 hours
 Cannabis and Cancer
 Can cannabis help alleviate the symptoms of cancer?
 How can cannabis help the side effects of chemotherapy?

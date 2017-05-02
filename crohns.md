@@ -6,12 +6,9 @@ permalink: /crohns/
 youtubeID: qvfN81Rr7aY
 ---
 
-## Please fill out the information below and someone will contact you within 24 hours
-Cannabis Inflammation
-Can cannabis help alleviate the symptoms of Crohns Disease, Lupus, Arthritis, and other auto-immune disorders?
-
-
-INFO TBD WILL BE RIGHT HERE
+## Please fill out the contact form and someone will contact you within 24 hours
+Cannabis and Inflammation
+Cannabis can greatly help alleviate the symptoms of Crohns Disease, Lupus, Arthritis, and other auto-immune disorders.
 
 * Nausea and vomiting
 * Weakness
@@ -23,4 +20,4 @@ INFO TBD WILL BE RIGHT HERE
 * Lack of sleep
 * High anxiety
 
-Often, cannabis can be more effective than opioids and other pharmaceutical drugs in alleviating the symptoms of cancer. Illinois doctors now recognize cannabis as an effective tool to treat symptoms of cancer therapy.
+Often, cannabis can be more effective than other pharmaceutical drugs in alleviating the symptoms of auto-immune disorders. Illinois doctors now recognize cannabis as an effective tool to treat these illnesses.
