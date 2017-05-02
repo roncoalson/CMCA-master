@@ -8,7 +8,9 @@ youtubeID: XkDI9wuaWAc
 
 ### Cannabis helps alleviate pain from conditions such as spinal injuries and Fibromyalgia.
 
-Tens of millions of Americans live with chronic pain. Many are prescribed opioid painkillers. In 2016 33,000 Americans died from opioid overdose. Many people in Chicago use cannabis to help with their successful management of chronic pain.  Some of the symptoms that cancer patients find cannabis helps with include:
+Tens of millions of Americans live with chronic pain. Many are prescribed opioid painkillers. In 2016 33,000 Americans died from opioid overdose. Many people in Chicago use cannabis to help with their successful management of chronic pain.  
+
+Some of the symptoms that cancer patients find cannabis helps with include:
 
 * Stiffness
 * Lack of mobility

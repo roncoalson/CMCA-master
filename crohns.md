@@ -6,7 +6,7 @@ permalink: /crohns/
 youtubeID: qvfN81Rr7aY
 ---
 
-### Cannabis can greatly help alleviate the symptoms of Crohns Disease, Lupus, Arthritis, and other auto-immune disorders.
+### Cannabis can greatly help alleviate the symptoms of Crohns Disease, Lupus, Arthritis, and other auto-immune disorders
 
 Auto immune disorders afflict more than 8% of Americans. Many forms of auto-immune disorders are approved qualifying conditions to receive a medical cannabis card in Illinois. These include Crohns disease, rheumatoid arthritis, lupus and more. Many people in Chicago use cannabis to help with their successful treatment and to manage their symptoms.
 
