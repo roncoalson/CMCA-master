@@ -8,16 +8,16 @@ youtubeID: XkDI9wuaWAc
 
 ### Cannabis helps alleviate pain from conditions such as spinal injuries and Fibromyalgia.
 
-Often, cannabis can be more effective than opioids and other pharmaceutical drugs in alleviating pain, particularly for chronic pain. Illinois doctors now recognize cannabis as an effective tool to treat fibromayalgia and other chronic pain problems.
+Tens of millions of Americans live with chronic pain. Many are prescribed opioid painkillers. In 2016 33,000 Americans died from opioid overdose. Many people in Chicago use cannabis to help with their successful management of chronic pain.  Some of the symptoms that cancer patients find cannabis helps with include:
 
-Cannabis can help with:
-
-* Nausea and vomiting
-* Weakness
+* Stiffness
+* Lack of mobility
+* Inability to sleep at night
+* Edginess 
+* Lack of quality of life
+* Feelings of Isolation
 * Loss of appetite
-* Loss of weight
-* Pain
-* Aches in bones
-* Swelling
-* Lack of sleep
+* Weight gain
 * High anxiety
+
+Opiates are some of the worst ways to treat chronic pain.  They cause depression, weight gain, dependency and addiction. Often, cannabis can be more effective than opioids and other pharmaceutical drugs in alleviating chronic pain. Illinois doctors now recognize cannabis as an effective tool to treat pain symptoms.

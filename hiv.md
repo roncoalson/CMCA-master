@@ -6,9 +6,10 @@ permalink: /hiv/
 youtubeID: kcHbjDlhIy4
 ---
 
-### Cannabis helps alleviate the symptoms of HIV and associated medications.
+### Cannabis helps alleviate the symptoms associated with HIV treatments and HIV medications?
 
-These symptoms include: 
+HIV is an approved qualifying condition to receive a medical cannabis card in Illinois. More than 1.2 million Americans suffer from HIV.  Many people in Chicago use cannabis to help with their successful treatment. Some of the symptoms that HIV patients find cannabis helps with include:
+
 * Nausea and vomiting
 * Weakness
 * Loss of appetite
@@ -19,4 +20,4 @@ These symptoms include:
 * Lack of sleep
 * High anxiety
 
-Often, cannabis can be more effective than other pharmaceutical drugs in alleviating the symptoms of HIV treatments. Illinois doctors now recognize cannabis as an effective tool as part of an HIV therapy regimen.
+Often, cannabis can be more effective than pharmaceutical drugs in alleviating the symptoms of HIV treatments. Illinois doctors now recognize cannabis as an effective tool to treat symptoms of HIV therapy.
