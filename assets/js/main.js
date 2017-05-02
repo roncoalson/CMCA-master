@@ -5,7 +5,7 @@
 */
 
 (function($) {
-	$('html').smoothScroll();
+	$('html').smoothScroll(800);
 
 	skel
 		.breakpoints({
