@@ -3,7 +3,7 @@ layout: video
 title: Pain and Cannabis
 description: Cannabis and Pain
 permalink: /pain/
-youtubeID: XkDI9wuaWAc
+youtubeID: Z1p1bJ9Nf3w
 ---
 
 ### Cannabis helps alleviate pain from conditions such as spinal injuries and Fibromyalgia.

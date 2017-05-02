@@ -3,7 +3,7 @@ layout: video
 title: Can Cannabis Help Crohn's Disease and other Auto-Immune Disorders?
 description: Cannabis and Crohns Disease, Lupus, Arthritis, and other auto-immune disorders
 permalink: /crohns/
-youtubeID: qvfN81Rr7aY
+youtubeID: p2NIjC16GDc
 ---
 
 ### Cannabis can greatly help alleviate the symptoms of Crohns Disease, Lupus, Arthritis, and other auto-immune disorders

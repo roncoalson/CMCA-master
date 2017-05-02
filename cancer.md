@@ -3,7 +3,7 @@ layout: video
 title: Can Cannabis Help Cancer?
 description: Cannabis and Cancer. We Can Help You or Someone You Know
 permalink: /cancer/
-youtubeID: E57z3VwkroM
+youtubeID: Ln4yjTS6Zb4
 ---
 
 ### Cannabis helps alleviate the symptoms of cancer and can help with the side effects of chemotherapy
