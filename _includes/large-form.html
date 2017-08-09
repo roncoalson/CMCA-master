@@ -1,22 +1,26 @@
-<form action="https://formspree.io/ron@hustlemo.re" method="POST" id="large-form">
+<style>
+    .required input:after { content:"*"; }
+</style>
+
+<form action="mailto:you@ron@hustlemo.re" method="POST" id="large-form">
 <center><h3>Fill out the form below</h3> 
 <h4>Someone will contact you within 24 hours to help you get your card</h4></center>
 <div class='form-field'>
-    <label>Name*</label>
+    <label>Name</label>
     <input type="text" name="_name" placeholder="Name" required>
 </div>
 <div class='form-field'>
-    <label>Email:</label>
-    <input type="email" name="_replyto" placeholder="Email Address">
+    <label>Email</label>
+    <input type="email" name="_replyto" placeholder="Email Address" required>
 </div>
 <div class='form-field'>
-    <label>Phone:</label>
-    <input type="text" name="_phone" placeholder="Phone">
+    <label>Phone</label>
+    <input type="text" name="_phone" placeholder="Phone" required>
 </div>
 <div class="control-group">
   <label for="dob-day" class="control-label">Date of birth</label>
   <div class="form-field">
-    <select name="dob-day" id="dob-day">
+    <select name="dob-day" id="dob-day" required>
       <option color = "white" value="">Day</option>
       <option value="">---</option>
       <option value="01">01</option>
@@ -51,7 +55,7 @@
       <option value="30">30</option>
       <option value="31">31</option>
     </select><br>
-    <select color = "white" name="dob-month" id="dob-month">
+    <select color = "white" name="dob-month" id="dob-month" required>
       <option value="">Month</option>
       <option value="">-----</option>
       <option value="01">January</option>
@@ -67,7 +71,7 @@
       <option value="11">November</option>
       <option value="12">December</option>
     </select><br>
-    <select color = "white" name="dob-year" id="dob-year">
+    <select color = "white" name="dob-year" id="dob-year" required>
       <option value="">Year</option>
       <option value="">----</option>
       <option value="2012">2012</option>
@@ -185,10 +189,10 @@
     </select>
   </div><br>
   <div class='form-field'>
-       <label>Type of Patient:</label>
-      <input type="radio" id="one" name="New Patient" value="1" />
+       <label>Type of Patient</label>
+      <input type="radio" id="one" name="New Patient" value="1" required />
        <label for="two">New Patient</label>
-        <input type="radio" id="two" name="Established Patient" value="2" /> 
+        <input type="radio" id="two" name="Established Patient" value="2" required/> 
       <label for="two">Established Patient</label>
 </div><br>
 <div class='form-field'>
@@ -407,7 +411,7 @@ age (you must be 18 or older to be eligible for certification).
      <br>
     <div class="form-field">
     <label>Insurance</label>
-    <select name="Insurance" id="Insurance">
+    <select name="Insurance" id="Insurance" required>
       <option color = "white" value="">Insurance</option>
       <option value="">---</option>
       <option value="01">Medicare</option>
@@ -419,7 +423,7 @@ age (you must be 18 or older to be eligible for certification).
     </select><br> 
     </div>
     We take most commercial insurance, please click on yours below. If you chose not to use insurance or we do not take your insurance, please click on “Self Pay” - Note - there is a 2 visit minimum.
-    
+    <br><br>
 <div class='form-field'>
     <label>What Zipcode do you live in?</label>
     <input type="text" name="_zipcode" placeholder="Zipcode">
