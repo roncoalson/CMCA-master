@@ -195,207 +195,58 @@
     <label>What conditions do you or someone you know suffer from?</label>
 
 <div class='conditions'>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='AIDS'>
-        <label>AIDS</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Agitation Of Alzheimer’s Disease'>
-        <label>Agitation Of Alzheimer’s Disease</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='ALS'>
-        <label>ALS</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Arnold-Chiari Malformation And Syringomelia'>
-        <label>Arnold-Chiari Malformation And Syringomelia</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Cachexia/Wasting Syndrome'>
-        <label>Cachexia/Wasting Syndrome</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Cancer'>
-        <label>Cancer</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Causalgia'>
-        <label>Causalgia</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Chronic Inflammatory Demyelinating Polyneuropathy'>
-        <label>Chronic Inflammatory Demyelinating Polyneuropathy</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Crohn’s Disease'>
-        <label>Crohn’s Disease</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='CRPS (Complex Regional Pain Syndrome Type II)'>
-        <label>CRPS (Complex Regional Pain Syndrome Type II)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Dystonia'>
-        <label>Dystonia</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Fibromyalgia (Severe)'>
-        <label>Fibromyalgia (Severe)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Fibrous Dysplasia'>
-        <label>Fibrous Dysplasia</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Glaucoma'>
-        <label>Glaucoma</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Hepatitis C'>
-        <label>Hepatitis C</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Human Immunodeficiency Virus (HIV)'>
-        <label>Human Immunodeficiency Virus (HIV)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Hydrocephalus'>
-        <label>Hydrocephalus</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Interstitial Cystitis'>
-        <label>Interstitial Cystitis</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Lupus'>
-        <label>Lupus</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Multiple Sclerosis'>
-        <label>Multiple Sclerosis</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Muscular Dystrophy'>
-        <label>Muscular Dystrophy</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Myasthenia Gravis'>
-        <label>Myasthenia Gravis</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Myoclonus'>
-        <label>Myoclonus</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Nail-Patella Syndrome'>
-        <label>Nail-Patella Syndrome</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Neurofibromatosis'>
-        <label>Neurofibromatosis</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Parkinson’s Disease'>
-        <label>Parkinson’s Disease</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Post-Concussion Syndrome'>
-        <label>Post-Concussion Syndrome</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Post Tramatic Stress Symptoms'>
-        <label>Post Tramatic Stress Symptoms</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='RSD (Complex Regional Pain Syndromes Type I)'>
-        <label>RSD (Complex Regional Pain Syndromes Type I)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Residual Limb Pain'>
-        <label>Residual Limb Pain</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Rheumatoid Arthritis (RA)'>
-        <label>Rheumatoid Arthritis (RA)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Seizures, Including Those Characteristic Of Epilepsy'>
-        <label>Seizures, Including Those Characteristic Of Epilepsy</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Sjogren’s Syndrome'>
-        <label>Sjogren’s Syndrome</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Spinal Cord Disease'>
-        <label>Spinal Cord Disease</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Spinal Cord Injury'>
-        <label>Spinal Cord Injury</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Spinocerebellar Ataxia (SCA)'>
-        <label>Spinocerebellar Ataxia (SCA)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Terminal Illiness'>
-        <label>Terminal Illiness</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Tourette’s Syndrome'>
-        <label>Tourette’s Syndrome</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Traumatic Brain Injury (TBI)'>
-        <label>Traumatic Brain Injury (TBI)</label>
-
-        <input type="checkbox"
-               name="_conditions"
-               value='Other'>
-        <label>Other (Please explain below)</label>
-
+    <div class="form-field">
+    <label>Condition</label>
+    <select name="Condition" id="Condition" required>
+      <option color = "white" value="">Condition</option>
+      <option value="">---</option>
+      <option value="01">AIDS</option>
+      <option value="02">Agitation Of Alzheimer’s Disease</option>
+      <option value="03">ALS</option>
+      <option value="04">Arnold-Chiari Malformation And Syringomelia</option>
+      <option value="05">Cachexia/Wasting Syndrome</option>
+      <option value="06">Causalgia</option>
+      <option value="07">Chronic Inflammatory Demyelinating Polyneuropathy</option>
+      <option value="08">Crohn’s Disease</option>
+      <option value="09">CRPS (Complex Regional Pain Syndrome Type II</option>
+      <option value="10">Dystonia</option>
+      <option value="11">Fibromyalgia (Severe)</option>
+      <option value="12">Fibrous Dysplasia</option>
+      <option value="13">Glaucoma</option>
+      <option value="14">Hepatitis C</option>
+      <option value="15">Human Immunodeficiency Virus (HIV)</option>
+      <option value="16">Hydrocephalus</option>
+      <option value="17">Interstitial Cystitisr</option>
+      <option value="18">Lupus</option>
+      <option value="19">Multiple Sclerosis</option>
+      <option value="20">Muscular Dystrophy</option>
+      <option value="21">Muscular Dystrophy</option>
+      <option value="22">Myasthenia Gravis</option>
+      <option value="23">Myoclonus</option>
+      <option value="24">Nail-Patella Syndrome</option>
+      <option value="25">Neurofibromatosis</option>
+      <option value="26">Parkinson’s Disease</option>
+      <option value="27">Post-Concussion Syndrome</option>
+      <option value="28">Post Tramatic Stress Symptoms</option>
+      <option value="29">RSD (Complex Regional Pain Syndromes Type I)r</option>
+      <option value="30">Residual Limb Pain</option>
+      <option value="30">Rheumatoid Arthritis (RA)</option>
+      <option value="30">Seizures, Including Those Characteristic Of Epilepsy</option>
+      <option value="30">Sjogren’s Syndrome</option>
+      <option value="30">Spinal Cord Disease</option>
+      <option value="30">Spinal Cord Injury</option>
+      <option value="30">Spinocerebellar Ataxia (SCA)</option>
+      <option value="30">Terminal Illiness</option>
+      <option value="30">Tourette’s Syndrome</option>
+      <option value="30">Traumatic Brain Injury (TBI)</option>
+      <option value="30">Other</option>
+      <option value="30">Cancer</option>
+      <option value="30">Cancer</option>
+      <option value="30">Cancer</option>
+      <option value="30">Cancer</option>
+    </select><br> 
+    </div> 
+    <label>Other (Please explain below)</label>
 </div>
 </div>
     <br>
