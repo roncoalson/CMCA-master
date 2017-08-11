@@ -209,7 +209,9 @@ option[disabled="disabled"] {
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  /* content: '\02795'; Unicode character for "plus" sign (+) */
+  font-family: FontAwesome;
+  content: "\f067";
   font-size: 13px;
   color: #fff !important;
   float: right;
@@ -217,7 +219,9 @@ option[disabled="disabled"] {
 }
 
 .accordion.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  /* content: "\2796"; Unicode character for "minus" sign (-) */
+  font-family: FontAwesome;
+  content: "\f068";
 }
 
 /* Flex to reverse home-footer.html elements (form and faq) on small screens */
