@@ -14,7 +14,7 @@
 </div>
 <div class='form-field'>
     <label>Phone</label>
-    <input type="text" name="_phone" placeholder="Phone" required>
+    <input type="text" name="_phone" placeholder="Phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
 </div>
 <div class="control-group">
   <label for="dob-day" class="control-label">Date of Birth</label>
@@ -244,7 +244,7 @@ age (you must be 18 or older to be eligible for certification).
     <br><br>
 <div class='form-field'>
     <label>What Zipcode do you live in?</label>
-    <input type="text" name="_zipcode" placeholder="Zipcode" required>
+    <input type="text" name="_zipcode" placeholder="Zipcode" pattern="(\d{5}([\-]\d{4})?)" required>
 </div>
 
 <div class='form-field'>
