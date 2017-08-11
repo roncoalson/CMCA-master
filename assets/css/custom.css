@@ -118,6 +118,10 @@ input[type="checkbox"] + label {
   border-radius: 10px;
 }
 
+option[disabled="disabled"] {
+  color: white;
+}
+
 #footer.row {
   margin: 0!important;
 }
@@ -144,50 +148,74 @@ input[type="checkbox"] + label {
   }
 }
 
-/* Form validation */
+/* Form validation icons */
 
-input[type="text"]:invalid,
-input[type="password"]:invalid,
-input[type="email"]:invalid,
-select:invalid,
-textarea:invalid {
-  background-color: #ef5e4a;
+.valid-icon:after {
+    content: '\2713';
+    font-size: 28px;
+    float: right;
+    margin-right: 7px;
+    margin-top: -38px;
 }
-
-/*
-input[type="text"]:valid,
-input[type="password"]:valid,
-input[type="email"]:valid,
-select:valid,
-textarea:valid {
-  background-color: #4CAF50;
+.invalid-icon:after {
+    content: '\26a0';
+    font-size: 28px;
+    float: right;
+    margin-right: 7px;
+    margin-top: -40px;
 }
-*/
 
 /* Accordion */
 
- /* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+.accordion {
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+.accordion h4 {
+  padding-right: 15px;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-} 
+.accordion.active, .accordion:hover {
+  background-color: #444;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #1d242a;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.panel p {
+  margin: 1em 0;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  margin-top: -44px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Flex to reverse home-footer.html elements (form and faq) on small screens */
+
+.flex-wrap-reverse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
 

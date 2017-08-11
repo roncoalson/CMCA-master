@@ -1,8 +1,7 @@
-<footer id="footer" class="row inner">
+<footer id="footer" class="row inner flex-wrap-reverse">
 <div class="6u 12u$(medium) footer-faq">
   <h2>Frequently Asked Questions</h2>
-  {% capture my_include %}{% include faq.md %}{% endcapture %}
-  {{ my_include | markdownify }}
+  {% include faq.html %}
 </div>
   <div class="6u 12u$(medium) footer-form">
     {% include large-form.html %}
