@@ -173,6 +173,7 @@ option[disabled="disabled"] {
 /* Accordion */
 
 .accordion {
+  position: relative;
   background-color: #111;
   color: #fff;
   cursor: pointer;
@@ -209,18 +210,18 @@ option[disabled="disabled"] {
 }
 
 .accordion:after {
-  /* content: '\02795'; Unicode character for "plus" sign (+) */
   font-family: FontAwesome;
-  content: "\f067";
+  content: "\f067"; /* fa plus sign */
   font-size: 13px;
   color: #fff;
   float: right;
-  margin-top: -9%;
+  position: absolute;
+  bottom: 2.5em;
+  right: 1em;
 }
 
 .accordion.active:after {
-  /* content: "\2796"; Unicode character for "minus" sign (-) */
-  content: "\f068";
+  content: "\f068"; /* fa minus sign */
 }
 
 /* Flex to reverse home-footer.html elements (form and faq) on small screens */
@@ -235,6 +236,16 @@ option[disabled="disabled"] {
             flex-direction: row;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
+}
+
+.footer-faq {
+    padding: 0 1em 0 1em;
+}
+
+@media screen and (min-width: 980px) {
+  .footer-faq {
+    padding: 0 0 0 1em;
+  }
 }
 
 /* Multi-select Dropdown */
