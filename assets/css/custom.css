@@ -51,9 +51,10 @@ ol {
   background: url("images/play-button.png") no-repeat;
   background-size: 100%;
   cursor: pointer;
-  filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
   -webkit-transition: .4s all;
-  -moz-transition: .4s all;
+  -o-transition: .4s all;
   transition: .4s all;
 }
 
@@ -95,12 +96,16 @@ input[type="checkbox"] + label {
 /*ES Edits*/
 .spotlight {
    opacity: 0.45;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
 .spotlight:hover {
   cursor:pointer;
   opacity: 1.0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 .footer-form {
@@ -176,6 +181,8 @@ option[disabled="disabled"] {
   text-align: left;
   border: none;
   outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -192,6 +199,8 @@ option[disabled="disabled"] {
   background-color: #1d242a;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  -o-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out;
 }
 
@@ -214,9 +223,15 @@ option[disabled="disabled"] {
 /* Flex to reverse home-footer.html elements (form and faq) on small screens */
 
 .flex-wrap-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
 }
 
 /* Multi-select Dropdown */
@@ -227,7 +242,8 @@ option[disabled="disabled"] {
 	outline: 0;
 	border: 0 !important;
 	background: transparent !important;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	color: #fff;
 	font-family: sans-serif;
 	line-height: normal;
