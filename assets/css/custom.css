@@ -211,7 +211,7 @@ option[disabled="disabled"] {
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #fff;
+  color: #fff !important;
   float: right;
   margin-top: -44px;
 }
