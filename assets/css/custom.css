@@ -213,14 +213,13 @@ option[disabled="disabled"] {
   font-family: FontAwesome;
   content: "\f067";
   font-size: 13px;
-  color: #fff !important;
+  color: #fff;
   float: right;
-  margin-top: -44px;
+  margin-top: -9%;
 }
 
 .accordion.active:after {
   /* content: "\2796"; Unicode character for "minus" sign (-) */
-  font-family: FontAwesome;
   content: "\f068";
 }
 
