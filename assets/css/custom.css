@@ -288,7 +288,15 @@ option[disabled="disabled"] {
   padding: 0 5px;
   width: 100%;
   height: auto;
-  background-color: #ef5e4a;
+  background: #ef5e4a;
   cursor: text;
   border-radius: 3px;
+}
+
+.chosen-container .chosen-drop {
+  background: #ef5e4a;
+}
+
+.chosen-container .chosen-drop li {
+  color: #fff;
 }
