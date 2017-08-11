@@ -28,4 +28,7 @@
         }
     });
 
+    $(".chosen-select").chosen();
+
+
 }());
