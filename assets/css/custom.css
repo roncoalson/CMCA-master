@@ -183,6 +183,15 @@ option[disabled="disabled"] {
   content: '\f071'; /* fa-exclamation-triangle */
 }
 
+/*
+#dob.valid-icon:after,
+#dob.invalid-icon:after,
+#conditions.valid-icon:after,
+#conditions.invalid-icon:after {
+  display: none;
+}
+*/
+
 /* Accordion */
 
 .accordion {
