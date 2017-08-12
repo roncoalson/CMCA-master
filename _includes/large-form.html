@@ -1,7 +1,9 @@
 <form action="https://formspree.io/info@chicagocannabis.org" method="POST" id="large-form">
-<center><h3>Fill out the form below</h3> 
-<h4>Someone will contact you within 24 hours to help you get your card</h4>
-    All Fields Must Be Field In</center>
+<div class="center">
+    <h3>Fill out the form below</h3>
+    <h4>Someone will contact you within 24 hours to help you get your card</h4>
+    All Fields Must Be Filled In
+</div>
 <div class='form-field'>
     <label>Name</label>
     <input type="text" name="_name" placeholder="Name" required>
@@ -12,14 +14,14 @@
 </div>
 <div class='form-field'>
     <label>Phone</label>
-    <input type="text" name="_phone" placeholder="Phone" required>
+    <input id="phone" type="text" name="_phone" placeholder="Phone" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required>
 </div>
 <div class="control-group">
   <label for="dob-day" class="control-label">Date of Birth</label>
   <div class="form-field">
     <select name="dob-day" id="dob-day" required>
-      <option color = "white" value="">Day</option>
-      <option value="">---</option>
+      <option value="" disabled="disabled" selected="selected">Day</option>
+      <option value="" disabled="disabled">---</option>
       <option value="01">01</option>
       <option value="02">02</option>
       <option value="03">03</option>
@@ -51,10 +53,12 @@
       <option value="29">29</option>
       <option value="30">30</option>
       <option value="31">31</option>
-    </select><br>
-    <select color = "white" name="dob-month" id="dob-month" required>
-      <option value="">Month</option>
-      <option value="">-----</option>
+    </select>
+  </div>
+  <div class="form-field">
+    <select name="dob-month" id="dob-month" required>
+      <option value="" disabled="disabled" selected="selected">Month</option>
+      <option value="" disabled="disabled">-----</option>
       <option value="01">January</option>
       <option value="02">February</option>
       <option value="03">March</option>
@@ -67,10 +71,12 @@
       <option value="10">October</option>
       <option value="11">November</option>
       <option value="12">December</option>
-    </select><br>
-    <select color = "white" name="dob-year" id="dob-year" required>
-      <option value="">Year</option>
-      <option value="">----</option>
+    </select>
+  </div>
+  <div class="form-field">
+    <select name="dob-year" id="dob-year" placeholder="Year" required>
+      <option value="" disabled="disabled" selected="selected">Year</option>
+      <option value="" disabled="disabled">----</option>
       <option value="2012">2012</option>
       <option value="2011">2011</option>
       <option value="2010">2010</option>
@@ -184,12 +190,18 @@
       <option value="1901">1901</option>
       <option value="1900">1900</option>
     </select>
-  </div><br>
-<div class='form-field'>
+  </div>
+</div>
+
+<div id="conditions" class='form-field'>
     <label>What conditions do you or someone you know suffer from?</label>
-    <select name="" id="Condition" required>
-       <option value="">Conditions</option>
-       <option value="">---</option>
+    <select name="" id="Condition" class="chosen-select" data-placeholder="Choose conditions" multiple required>
+      <option value="" disabled="disabled">---</option>
+      <option value="41">Cancer</option>
+      <option value="28">Post Tramatic Stress Symptoms</option>
+      <option value="27">Post-Concussion Syndrome</option>
+      <option id="none" value="">None</option>
+      <option value="" disabled="disabled">---</option>
       <option value="01">AIDS</option>
       <option value="02">Agitation Of Alzheimer’s Disease</option>
       <option value="03">ALS</option>
@@ -230,19 +242,12 @@
       <option value="38">Tourette’s Syndrome</option>
       <option value="39">Traumatic Brain Injury (TBI)</option>
       <option value="40">Other (Please explain below)</option>
-    </select><br> 
+    </select>
+</div>
 
 <div class='form-field'>
-    <input type="checkbox" name="pre-existing" value="conditions"> I don’t have one of the pre-existing conditions.<br><br>
-+ You will need to provide proof of your identity, Illinois residency, and 
-age (you must be 18 or older to be eligible for certification).
- </div>
-     <br>
-    We take most commercial insurance, please click on yours below. If you chose not to use insurance or we do not take your insurance, please click on “Self Pay” - Note - there is a 2 visit minimum.
-    <br><br>
-<div class='form-field'>
     <label>What Zipcode do you live in?</label>
-    <input type="text" name="_zipcode" placeholder="Zipcode" required>
+    <input type="text" name="_zipcode" placeholder="Zipcode" pattern="(\d{5}([\-]\d{4})?)" required>
 </div>
 
 <div class='form-field'>

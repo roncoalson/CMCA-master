@@ -9,8 +9,9 @@
 title: Chicago Cannabis Alliance & Chicago Medical Cannabis Association
 email: info@chicagocannabis.org
 description: HELPING CHICAGO PATIENTS ACCESS THE CANNABIS MEDICINE THEY NEED
-baseurl: "" # the subpath of your site, e.g. /blog
 url: http://chicagocannabis.org # the base hostname & protocol for your site
+#url: http://chicagocannabis.org # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
 twitterUrl: http://www.google.com
 facebookUrl: http://www.google.com
 instagramUrl: http://www.google.com
