@@ -18,7 +18,7 @@
 
       $("#youtube-player").on('click', ".play", function() {
         var iframe = document.createElement("iframe");
-        iframe.setAttribute("src", "https://www.youtube.com/embed/" + videoID + "?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0")
+        iframe.setAttribute("src", "https://www.youtube.com/embed/" + videoID + "?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=1")
         iframe.setAttribute("frameborder", "0");
         iframe.setAttribute("allowfullscreen", "1");
 
