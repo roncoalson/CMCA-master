@@ -16,7 +16,7 @@
         }
     }
 
-    $('#large-form').bind('mousedown keyup', function(e){
+    $('#large-form').bind('click keyup', function(e){
         if ( $(e.target).is('[required]') ) {
             if( $(e.target).is(':invalid') ){
                 $(e.target).parent().removeClass('valid-icon');
