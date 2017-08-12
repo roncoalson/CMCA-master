@@ -1,5 +1,6 @@
 (function() {
 
+    // Accordion
     var acc = document.getElementsByClassName('accordion');
 
     if (acc.length) {
@@ -16,6 +17,10 @@
         }
     }
 
+    // Initialize chosen jQuery plugin for multi-select dropdown
+    $(".chosen-select").chosen();
+
+    // Form validation icons
     $('#large-form').on('click change keyup', function(e){
         if ( $(e.target).is('[required]') ) {
             if( $(e.target).is(':invalid') ){
@@ -27,8 +32,5 @@
             }
         }
     });
-
-    $(".chosen-select").chosen();
-
 
 }());
