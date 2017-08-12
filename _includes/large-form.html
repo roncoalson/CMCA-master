@@ -191,8 +191,12 @@
 
 <div class='form-field'>
     <label>What conditions do you or someone you know suffer from?</label>
-    <select name="" id="Condition" class="chosen-select" multiple required>
-      <option value="" disabled="disabled" selected="selected">Conditions</option>
+    <select name="" id="Condition" class="chosen-select" data-placeholder="Choose conditions" multiple required>
+      <!--<option value="" disabled="disabled" selected="selected">Conditions</option>-->
+      <option value="41">Cancer</option>
+      <option value="28">Post Tramatic Stress Symptoms</option>
+      <option value="27">Post-Concussion Syndrome</option>
+      <option value="">None</option>
       <option value="" disabled="disabled">---</option>
       <option value="01">AIDS</option>
       <option value="02">Agitation Of Alzheimer’s Disease</option>
@@ -237,9 +241,6 @@
     </select>
 </div>
 
-<div class='form-field'>
-    <input id="no-pre-existing" type="checkbox" name="pre-existing" value="conditions"> I don’t have one of the pre-existing conditions.<br>
-</div>
 <div>
     <p>We take most commercial insurance, please click on yours below. If you chose not to use insurance or we do not take your insurance, please click on “Self Pay” - Note - there is a 2 visit minimum.</p>
 </div>

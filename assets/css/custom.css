@@ -73,6 +73,7 @@ ol {
 }
 
 .form-field {
+  position: relative;
   display: block;
   margin-bottom: 1em;
 }
@@ -165,22 +166,22 @@ option[disabled="disabled"] {
 
 /* Form validation icons */
 
+.valid-icon:after,
+.invalid-icon:after {
+  font-family: FontAwesome;
+  font-size: 22px;
+  position: absolute;
+  right: .3em;
+  bottom: .4em;
+}
+
 .valid-icon:after {
-  content: '\2713';
-  font-size: 28px;
-  float: right;
-  margin-right: 7px;
-  margin-top: -38px;
+  content: '\f00c'; /* fa-check */
 }
 
 .invalid-icon:after {
-  content: '\26a0';
-  font-size: 28px;
-  float: right;
-  margin-right: 7px;
-  margin-top: -40px;
+  content: '\f071'; /* fa-exclamation-triangle */
 }
-
 
 /* Accordion */
 
@@ -224,8 +225,7 @@ option[disabled="disabled"] {
 
 .accordion:after {
   font-family: FontAwesome;
-  content: "\f067";
-  /* fa plus sign */
+  content: "\f067"; /* fa-plus */
   font-size: 13px;
   color: #fff;
   float: right;
@@ -235,10 +235,8 @@ option[disabled="disabled"] {
 }
 
 .accordion.active:after {
-  content: "\f068";
-  /* fa minus sign */
+  content: "\f068"; /* fa-minus */
 }
-
 
 /* Flex to reverse home-footer.html elements (form and faq) on small screens */
 
@@ -285,11 +283,12 @@ option[disabled="disabled"] {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding: 0 5px;
+  padding: .7em;
   width: 100%;
-  height: auto;
+  min-height: 2.75em;
   background: #ef5e4a;
   cursor: text;
+  border: unset;
   border-radius: 3px;
 }
 
@@ -299,4 +298,41 @@ option[disabled="disabled"] {
 
 .chosen-container .chosen-drop li {
   color: #fff;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice span {
+  font-size: 13pt;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: initial;
+  background-color: initial;
+  background-image: initial;
+  color: #fff;
+  box-shadow: initial;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+  background-image: initial;
+  border: initial;
+}
+
+.chosen-container .chosen-drop li {
+  font-size: 13pt;
+  line-height: 1.65em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #ed4933;
+  background-image: initial;
+  color: #fff;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  font-family: inherit;
+  font-size: 13pt;
+  padding: 0 .5em;
 }
