@@ -131,7 +131,13 @@ input[type="checkbox"]+label {
 }
 
 option[disabled="disabled"] {
-  color: #ccc;
+  color: #fff;
+}
+
+@media screen and (min-width: 1280px) {
+  option[disabled="disabled"] {
+    color: #ccc;
+  }
 }
 
 #footer.row {
@@ -309,7 +315,8 @@ option[disabled="disabled"] {
   background-color: initial;
   background-image: initial;
   color: #fff;
-  box-shadow: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
 }
 
 .chosen-container-multi .chosen-choices li.search-choice {
