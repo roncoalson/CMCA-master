@@ -136,6 +136,14 @@ option[disabled="disabled"],
   color: #fff;
 }
 
+.wrapper.style5 input[type="text"],
+.wrapper.style5 input[type="password"],
+.wrapper.style5 input[type="email"],
+.wrapper.style5 select,
+.wrapper.style5 textarea {
+  color: #fff;
+}
+
 #footer.row {
   margin: 0!important;
 }
