@@ -21,7 +21,7 @@
     $(".chosen-select").chosen();
 
     // Form validation icons
-    $('#large-form').on('click change keyup', function(e){
+    $('#large-form').on('click change focusout keyup', function(e){
         if ( $(e.target).is('[required]') ) {
             if( $(e.target).is(':invalid') ){
                 $(e.target).parent().removeClass('valid-icon');
@@ -32,5 +32,6 @@
             }
         }
     });
+
 
 }());
