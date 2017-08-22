@@ -2582,7 +2582,7 @@
 
 		.wrapper > .inner {
 			width: 60em;
-			margin: 0px auto;
+			margin: 40px auto;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -2633,7 +2633,6 @@
 			}
 
 			.wrapper.style1 header p {
-				padding: 3em 2em 4em 2em ;
 				color: #a6e0db;
 			}
 
