@@ -3400,7 +3400,7 @@
 
 		#banner p {
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
+			text-transform: lowercase;
 		}
 
 			#banner p a {
