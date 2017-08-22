@@ -2600,13 +2600,13 @@
 				.wrapper > .inner {
 					width: 100%;
 					margin: 0px 0px 40px 0px;
-					padding: 0px 0px 40px 0px
+					padding: 0px 0px 40px 0px;
 				}
 
 			}
 
 		.wrapper.alt {
-			padding: 0;
+			padding: 0px 0px 40px 0px;
 		}
 
 		.wrapper.style1 {
