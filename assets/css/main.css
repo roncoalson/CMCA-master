@@ -3352,6 +3352,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+                padding: 0.35em 1em 5em 1em;
 	}
 
 		#banner h2 {
@@ -3400,7 +3401,7 @@
 
 		#banner p {
 			letter-spacing: 0.225em;
-			text-transform: lowercase;
+			text-transform: uppercase;
 		}
 
 			#banner p a {
