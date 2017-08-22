@@ -2583,7 +2583,6 @@
 		.wrapper > .inner {
 			width: 60em;
 			margin: 0px auto;
-			padding-bottom: 40px;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -3587,7 +3586,7 @@
 /* Main */
 
 	#main > header {
-		padding: 12em 0 10em 0 ;
+		padding: 12em 0 40em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -3609,7 +3608,6 @@
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			top: 0;
-			padding: 50px 30px 50px 80px;
 		}
 
 			#main > header p a {
