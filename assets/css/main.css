@@ -3596,7 +3596,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		text-align: left;
+		text-align: center;
 	}
 
 		#main > header h2 {
@@ -3618,7 +3618,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#main > header {
-				padding: 10em 0 8em 0 ;
+				padding: 10em 0 2em 0 ;
 			}
 
 		}
